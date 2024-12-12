@@ -1,3 +1,0 @@
-send_due_date_reminders:
-  cron: "* * * * *" # Run every minute
-  class: DueDateReminderWorker
