@@ -1,0 +1,11 @@
+# :concurrency: 5
+# :queues:
+#   - default
+#   - mailers
+# # :redis:
+# #   url: redis://localhost:6380/0
+:scheduler:
+  :schedule:
+    DueDateReminderWorker:
+      every: 1 minute
+      class: DueDateReminderWorker

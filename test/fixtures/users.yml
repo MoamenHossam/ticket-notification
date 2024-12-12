@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  due_date_reminder_active: false
+  due_date_reminder_interval: 1
+  due_date_reminder_offset: 1
+  due_date_reminder_time: 2024-12-10 19:59:01
+  time_zone: MyString
+
+two:
+  email: MyString
+  due_date_reminder_active: false
+  due_date_reminder_interval: 1
+  due_date_reminder_offset: 1
+  due_date_reminder_time: 2024-12-10 19:59:01
+  time_zone: MyString
