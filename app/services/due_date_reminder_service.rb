@@ -19,7 +19,9 @@ class DueDateReminderService
       user.tickets.each do |ticket|
         next unless ticket_due_for_reminder?(ticket, user)
         begin
-          NotificationMailer.notification_email(user, ticket).deliver_now
+          notification_strategy = Notifications::NotificationFactory.for_user(user)
+          notification_strategy.send_notification(user, ticket)
+          
         rescue StandardError => e
           Rails.logger.error "Error sending notification for user #{user.id} and ticket #{ticket.id}: #{e.message}"
         end

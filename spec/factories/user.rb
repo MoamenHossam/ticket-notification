@@ -1,7 +1,7 @@
 FactoryBot.define do
     factory :user do
-        name {'moamen'}
-        email {'moamen.hossam@outlook.com'}
+        name {Faker::Name.name}
+        email { Faker::Internet.unique.email }
         time_zone {'UTC'}
         send_due_date_reminder{true}
         due_date_reminder_interval{1}

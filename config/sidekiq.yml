@@ -7,5 +7,5 @@
 :scheduler:
   :schedule:
     DueDateReminderWorker:
-      every: 1 hour
+      every: 1 minute
       class: DueDateReminderWorker
